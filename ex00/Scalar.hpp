@@ -2,6 +2,7 @@
 #include <ostream>
 #include <sstream>
 #include <cstdlib>
+#include <cmath>
 
 
 typedef std::string string;
@@ -9,13 +10,14 @@ typedef std::string string;
 class Scalar
 {
 private :
-    double _content;
-    Scalar();
+	double _content;
+	string _strCpy;
+	Scalar();
 public :
-    Scalar (string word);
-    void asFloat();
-    void asInt();
-    void asChar();
-    void asDouble();
-    
+	Scalar (string word);
+	void asFloat();
+	void asInt();
+	void asChar();
+	void asDouble();
+	
 };
