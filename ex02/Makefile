@@ -1,12 +1,12 @@
-files.cpp = main.cpp Serialize.cpp
+files.cpp = main.cpp Base.cpp
 
-files.hpp = Serialize.hpp
+files.hpp = Base.hpp
 
 CFLAGS = -Wall -Wextra -Werror
 
 files.o = $(files.cpp:.cpp=.o)
 
-NAME = Serialize
+NAME = Random
 
 all : $(NAME)
 
