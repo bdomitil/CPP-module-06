@@ -12,7 +12,7 @@ Scalar :: Scalar(string word)
 		&& static_cast<int>(word.find("f")) != -1)
 		word = word.substr(0, word.find_last_of("f"));
 	stream << word;
-	if (word.length() > 1)
+	if (word.length() >= 1)
 		stream >> static_cast<double&>(_content);
 	_strCpy = word;
 
